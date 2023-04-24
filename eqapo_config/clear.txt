@@ -1,0 +1,2 @@
+# To allow fair comparison, I tried to adjust the level to be comparable to binaural configurations. Feel free to adjust if you think the level is not appropriate, especially because perceived level difference may differ depending on the sound content.
+Preamp: -20 dB

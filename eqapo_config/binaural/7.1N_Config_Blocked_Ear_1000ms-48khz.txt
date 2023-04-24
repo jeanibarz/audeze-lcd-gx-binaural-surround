@@ -1,0 +1,42 @@
+# BRIR convolution configuration for Equalizer APO
+# Speaker setup: 7.1 surround (narrow back placement)
+Channel: all
+Preamp: -18.5 dB
+Copy: L_INPUT_IPSI=L L_INPUT_CONTRA=L R_INPUT_IPSI=R R_INPUT_CONTRA=R C_INPUT_L_EAR=C C_INPUT_R_EAR=C RL_INPUT_IPSI=RL RL_INPUT_CONTRA=RL RR_INPUT_IPSI=RR RR_INPUT_CONTRA=RR SL_INPUT_IPSI=SL SL_INPUT_CONTRA=SL SR_INPUT_IPSI=SR SR_INPUT_CONTRA=SR
+Channel: L_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\fl_le.wav
+Channel: L_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\fl_re.wav
+Channel: R_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\fr_re.wav
+Preamp: -1.3 dB
+Channel: R_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\fr_le.wav
+Channel: C_INPUT_L_EAR
+Convolution: blocked_ear_1000ms-48khz\fc_le.wav
+Channel: C_INPUT_R_EAR
+Convolution: blocked_ear_1000ms-48khz\fc_re.wav
+Channel: RL_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\rl_le.wav
+Channel: RL_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\rl_re.wav
+Channel: RR_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\rr_re.wav
+Channel: RR_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\rr_le.wav
+Channel: SL_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\sl_le.wav
+Channel: SL_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\sl_re.wav
+Channel: SR_INPUT_IPSI
+Convolution: blocked_ear_1000ms-48khz\sr_re.wav
+Channel: SR_INPUT_CONTRA
+Convolution: blocked_ear_1000ms-48khz\sr_le.wav
+Channel: L_INPUT_CONTRA R_INPUT_CONTRA RL_INPUT_CONTRA RR_INPUT_CONTRA
+Delay: 0.14 ms
+Channel: SL_INPUT_CONTRA SR_INPUT_CONTRA
+Delay: 0.7 ms
+Channel: L_INPUT_IPSI R_INPUT_CONTRA C_INPUT_L_EAR RL_INPUT_IPSI RR_INPUT_CONTRA SL_INPUT_IPSI SR_INPUT_CONTRA
+Channel: L_INPUT_CONTRA R_INPUT_IPSI C_INPUT_R_EAR RL_INPUT_CONTRA RR_INPUT_IPSI SL_INPUT_CONTRA SR_INPUT_IPSI
+Copy: L=0*L+L_INPUT_IPSI+R_INPUT_CONTRA+C_INPUT_L_EAR+RL_INPUT_IPSI+RR_INPUT_CONTRA+SL_INPUT_IPSI+SR_INPUT_CONTRA R=0*R+L_INPUT_CONTRA+R_INPUT_IPSI+C_INPUT_R_EAR+RL_INPUT_CONTRA+RR_INPUT_IPSI+SL_INPUT_CONTRA+SR_INPUT_IPSI C=0*C LFE=0*LFE RL=0*RL RR=0*RR SL=0*SL SR=0*SR
+Channel: L R

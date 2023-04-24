@@ -1,0 +1,4 @@
+Channel: all
+Include: binaural\7.1N_Config_Blocked_Ear_1000ms-48khz.txt
+Channel: L R
+Include: binaural\audeze_lcdgx_comp-48khz\audeze_comp.txt

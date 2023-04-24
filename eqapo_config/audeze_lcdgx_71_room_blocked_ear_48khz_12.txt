@@ -1,0 +1,14 @@
+# Date of creation: 2023-04-21
+Channel: all
+Include: binaural\7.1N_Config_Blocked_Ear_1000ms-48khz.txt
+Channel: L R
+Include: binaural\audeze_lcdgx_comp-48khz\audeze_comp.txt
+
+# Subjective equalization
+Filter: ON LS Fc 40 Hz Gain 18 dB
+Filter: ON LS Fc 80 Hz Gain 18 dB
+Filter: ON HS Fc 7000 Hz Gain 14.7 dB
+Filter: ON PK Fc 50 Hz Gain -5.5 dB BW Oct 0.3442
+Filter: ON PK Fc 220 Hz Gain -5 dB BW Oct 0.1442
+Filter: ON PK Fc 2000 Hz Gain 5 dB BW Oct 2.1442
+Filter: ON PK Fc 13678.2 Hz Gain -4.4 dB Q 10
