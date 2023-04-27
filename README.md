@@ -20,10 +20,12 @@ To prevent buffer underflows, follow these steps to increase the buffer size. Yo
 3. Set the latency to a high value (e.g., 3x4096).
 4. Set the internal sampling frequency to 48 kHz.
 
+Start Voicemeeter Banana (each time you boot your computer), and configure the A1 channel to be forwarded to your physical soundcard, like in the following screenshot:
+![image](https://user-images.githubusercontent.com/3049704/234979333-c6a7e96f-0b3d-49ba-8e54-d025a118471d.png)
+
 Proceed to the next step: install EqualizerAPO.
 
 ## Configure 7.1 Soundcard
-### Virtual Soundcard
 1. Open the "Sound configuration panel" in Windows, go to the "Playback" tab, right-click on "VoiceMeeter Input," and select "Configure speakers."
 2. Choose "Surround 7.1," click "Next."
 3. Tick all checkboxes to disable high-pass filtering, click "Next."
