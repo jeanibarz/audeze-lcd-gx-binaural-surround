@@ -16,8 +16,10 @@ This tutorial uses Banana. Install the software and reboot your system.
 To prevent buffer underflows, follow these steps to increase the buffer size. You may optimize latency later by decreasing the buffer size, but this may introduce audio glitches.
 
 1. Open "Virtual IO Control Panel."
-2. Set the maximum delay to a high value (e.g., 32768) and reboot.
-3. Set the latency to a high value (e.g., 3x4096).
+2. Set the maximum delay to a high value (e.g., 32768) **and reboot**.
+<img src="https://user-images.githubusercontent.com/3049704/234984863-4fe145af-d087-41d9-afc3-f1d2184a05bb.png" width="50%" height="50%">
+3. Set the latency to a high value (e.g., 3x8192).
+<img src="https://user-images.githubusercontent.com/3049704/234984932-2996b83d-2c22-403d-baa0-5412287b5b17.png" width="50%" height="50%">
 4. Set the internal sampling frequency to 48 kHz.
 
 Start Voicemeeter Banana (each time you boot your computer), and configure the A1 channel to be forwarded to your physical soundcard, like in the following screenshot:
